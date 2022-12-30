@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+
+	ServerName canetaazulbar.backend.biz
+
+	ServerAdmin c.luisa@escolar.ifrn.edu.br
+	DocumentRoot /var/www/html/canetaazulbar.backend.biz
+	
+	ErrorLog /var/log/apache2/canetaazulbar.backend.biz/error.log
+	CustomLog /var/log/apache2/canetaazulbar.backend.biz/access.log combined
+
+</VirtualHost>
