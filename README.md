@@ -6,7 +6,7 @@
 - [Front-End](https://github.com/leonardonadson/projetos-sites-linux-ics/site-frontend)
 - [Back-End](https://github.com/leonardonadson/projetos-sites-linux-ics/site-backend)
 - [Apache2-confs](https://github.com/leonardonadson/projetos-sites-linux-ics/apache2-confs)
-- [mysql-confs](https://github.com/leonardonadson/projetos-sites-linux-ics/mysql-confs)
+- [Mysql-confs](https://github.com/leonardonadson/projetos-sites-linux-ics/mysql-confs)
 - [Vídeos e Slide](https://github.com/leonardonadson/projetos-sites-linux-ics/apresentacoes)
 #
 
