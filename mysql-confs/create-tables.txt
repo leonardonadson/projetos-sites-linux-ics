@@ -1,0 +1,25 @@
+CREATE TABLE Pedido
+(
+  id INT NOT NULL AUTO_INCREMENT,
+  cliente VARCHAR NOT NULL,
+  preco DOUBLE NOT NULL,
+  telefone_cliente VARCHAR(13) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE Produto
+(
+  id INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(150) NOT NULL,
+  preco DOUBLE NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE Pedido_Produto
+(
+  id_produto INT NOT NULL,
+  id_pedido INT NOT NULL,
+  PRIMARY KEY (id_produto, id_pedido),
+  FOREIGN KEY (id_produto) REFERENCES Produto(codigo),
+  FOREIGN KEY (id_pedido) REFERENCES Pedido(codigo)
+);
