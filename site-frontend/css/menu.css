@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+      
+      
+  }
+  header img{
+      margin-left: 10px;
+      width: 70px;
+      margin-top: 23px;
+  }
+  
+  header a {
+    color: #438EFF; 
+    text-decoration: none;
+  }
+  
+  header {
+    box-sizing: border-box;
+    height: 60px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.418);
+    z-index: 1;
+    font-family: 'Bebas Neue';
+  }
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    margin-right: 15px;
+  }
+  #menu a {
+    display: block;
+    padding: 0.2rem;
+    transition: .3s;
+    font-size: 20px;
+  
+  }
+  #btmenu {
+    display: none;
+    color: #438EFF;
+  }
+  .btn-contato{
+      background: linear-gradient(90deg, #438EFF 0%, #0053FF 78.88%, #0047FF 159.41%);
+      color: black;
+      padding: 1px 2.5px;
+      border-radius: 2px;
+      box-shadow: 0px 0px 18px 1px rgba(95, 86, 122, 0.34);
+      -webkit-transition: box-shadow 0.25s;
+      transition: box-shadow 0.25s;
+  }
+  .btn-contato a{
+      color: black;
+  }
+  .btn-contato:hover{
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+  }
+  
+  
+  @media (max-width: 519px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      right: 0px;
+      background: #060606be;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+      margin-right: 0;
+    }
+    nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 2rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #menu a:hover{
+      background-color: rgba(34, 34, 34, 0.05);
+    }
+    #btmenu {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    .btn-contato a{
+      text-align: center;
+    }
+    #btmenu span {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #btmenu span::after,
+    #btmenu span::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: #438EFF;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #btmenu span {
+      border-top-color: transparent;
+    }
+    #nav.active #btmenu span::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #btmenu span::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
