@@ -1,21 +1,20 @@
 CREATE TABLE Pedido
 (
   id INT NOT NULL AUTO_INCREMENT,
-  cliente VARCHAR NOT NULL,
-  preco DOUBLE NOT NULL,
-  telefone_cliente VARCHAR(13) NOT NULL,
+  nome_cliente VARCHAR NOT NULL,
+  numero_cliente VARCHAR(13) NOT NULL,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE Produto
 (
-  id INT NOT NULL AUTO_INCREMENT,
+  prdoduto_id INT NOT NULL AUTO_INCREMENT,
   nome VARCHAR(150) NOT NULL,
   preco DOUBLE NOT NULL,
   PRIMARY KEY (id)
 );
 
-CREATE TABLE Pedido_Produto
+CREATE TABLE pedido_produto
 (
   id_produto INT NOT NULL,
   id_pedido INT NOT NULL,
