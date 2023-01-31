@@ -7,7 +7,7 @@
 - [Back-End](https://github.com/leonardonadson/projetos-sites-linux-ics/site-backend)
 - [Apache2-confs](https://github.com/leonardonadson/projetos-sites-linux-ics/apache2-confs)
 - [Mysql-confs](https://github.com/leonardonadson/projetos-sites-linux-ics/mysql-confs)
-- [Apresentação](https://github.com/leonardonadson/projetos-sites-linux-ics/apresentacoes)
+- [Apresentação](https://github.com/leonardonadson/projetos-sites-linux-ics/tree/main/Apresenta%C3%A7%C3%B5es)
 - [Vídeo de apresentação](https://clipchamp.com/watch/ItfYOJRXIMn)
 #
 
